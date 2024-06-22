@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <title>LifeSpot</title>
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <script src="../Static/JS/index.js"></script>
+    <script>
+        checkAge();
+        handleSession();
+        sessionLog();
+        const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>LifeSpot - прямые трансляции с улиц</h1>
         <p>Покажем, что происходит прямо сейчас</p>
-        <input />
+        <input type="search" oninput="filterContent(inputParseFunction())" placeholder="Search" size='50%'/>
     </header>
     <aside id="sidebar">
     <div class="navbar">
