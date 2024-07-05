@@ -1,4 +1,9 @@
-﻿let elements = document.getElementsByTagName('*');
+﻿const saveInput = function () {
 
-// Выведем результат в уведомление
-alert(`Количество элементов на странице:  ${elements.length}`);
+    let currentInput = document.getElementsByTagName('input')[0].value.toLowerCase();
+
+    alert('Последний ввод: ' + this.lastInput 
+        + '\n' + 'Текущий ввод: ' + currentInput);
+
+    this.lastInput = currentInput;
+}
